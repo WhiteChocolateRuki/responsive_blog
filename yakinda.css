@@ -25,7 +25,6 @@ img, video{
 
 a, a:active, a:link, a::before, a::after{
     text-decoration: none;
-    /* color: white; */
 }
 ul{
     list-style: none;
@@ -41,19 +40,17 @@ p{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    background: linear-gradient(to right, #121218, #5b5c60); /* #450f35 */
+    background: linear-gradient(to right, #121218, #5b5c60);
     font-family: "Dancing Script", cursive;
     font-optical-sizing: auto;
     font-weight: weight;
     font-style: bolt;
     color: white;
-    /* justify-content: space-evenly; */
 }
 
 .topbar h4{
     font-size: normal;
     font-family: "Merriweather", serif;
-    /* font-family: "Volkhov", serif; */
     font-weight: 900;
     font-style: italic;
     margin-left: 1px;    
@@ -72,9 +69,7 @@ p{
     height: 100%;
     display: flex;
     align-items: center;
-    /* justify-content: space-evenly; */
     justify-content: center;
-    /* padding-right:5px; */
 
 }
 .topbar a{
@@ -107,19 +102,15 @@ i:hover{
 
 }
 .topbar .center a {
-    color: white; /* Yazı rengini beyaz yap */
-    text-decoration: none; /* Altı çiziliyi kaldır */
+    color: white; 
+    text-decoration: none;
 }
 .center a:hover{
     opacity: 0.7;
     
     }
-/* .left img {
-        margin-right: 10px;  Resim ile yazı arasına 10px boşluk ekle 
-}*/
+
 .topbar .left span img{
-    /* width: 30px;
-    height: 30px; */
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -130,23 +121,23 @@ i:hover{
 .hamburger {
     display: none;
     cursor: pointer;
-    padding: 10px; /* İkonun etrafına boşluk */
-    margin-left: auto; /* Sağ tarafa yaslamak için */
-    margin-right: auto; /* Sağ tarafa yaslamak için */
+    padding: 10px; 
+    margin-left: auto; 
+    margin-right: auto;
 }
 
 .hamburger i {
     font-size: 1.5rem;
     display: flex;
-    justify-content: center; /* Yatayda ortalama */
-    align-items: center; /* Dikeyde ortalama */
+    justify-content: center;
+    align-items: center; 
 }
 
-/* Mobil menü stili */
+/* Mobil menü */
 .mobile-menu {
     display: none;
     flex-direction: column;
-    background: linear-gradient(to right, #121218, #5b5c60); /* #091649, #68134f */
+    background: linear-gradient(to right, #121218, #5b5c60);
     position: absolute;
     top: 50px;
     width: 100%;
@@ -158,7 +149,6 @@ i:hover{
     color: white;
     padding: 10px;
     text-decoration: none;
-   /* border-top: 1px solid white;*/
 }
 
 
@@ -235,7 +225,7 @@ i:hover{
 .header img{
     width: 100%;
     height: 450px;
-    object-fit: cover;    /*height resmin yapısı bozar bu ise tam sığdırır */
+    object-fit: cover;   
 
 }
 /* Responsive  */

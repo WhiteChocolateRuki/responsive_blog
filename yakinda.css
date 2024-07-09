@@ -1,0 +1,343 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html::-webkit-scrollbar{
+    width: 0px  
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+    
+}
+img, video{
+    width: 100%;
+}
+
+a, a:active, a:link, a::before, a::after{
+    text-decoration: none;
+    /* color: white; */
+}
+ul{
+    list-style: none;
+}
+p{
+     color: #E48586; 
+}
+
+
+.topbar{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background: linear-gradient(to right, #121218, #5b5c60); /* #450f35 */
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: bolt;
+    color: white;
+    /* justify-content: space-evenly; */
+}
+
+.topbar h4{
+    font-size: normal;
+    font-family: "Merriweather", serif;
+    /* font-family: "Volkhov", serif; */
+    font-weight: 900;
+    font-style: italic;
+    margin-left: 1px;    
+    color: white;
+
+}
+
+.topbar{
+    width: 100%;
+    display: flex;
+    
+}
+
+.topbar .right{ 
+    flex: 3; 
+    height: 100%;
+    display: flex;
+    align-items: center;
+    /* justify-content: space-evenly; */
+    justify-content: center;
+    /* padding-right:5px; */
+
+}
+.topbar a{
+    color: white;
+}
+.topbar .left{
+    flex: 3; 
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.topbar.right i{
+    font-size: 1.3rem;
+    color: white;
+}
+
+i:hover{
+    opacity: 0.7;
+}
+.topbar .center{
+    flex: 6;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+.topbar .center a {
+    color: white; /* Yazı rengini beyaz yap */
+    text-decoration: none; /* Altı çiziliyi kaldır */
+}
+.center a:hover{
+    opacity: 0.7;
+    
+    }
+/* .left img {
+        margin-right: 10px;  Resim ile yazı arasına 10px boşluk ekle 
+}*/
+.topbar .left span img{
+    /* width: 30px;
+    height: 30px; */
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-left: 35px;
+    margin-right: 15px;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+    padding: 10px; /* İkonun etrafına boşluk */
+    margin-left: auto; /* Sağ tarafa yaslamak için */
+    margin-right: auto; /* Sağ tarafa yaslamak için */
+}
+
+.hamburger i {
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center; /* Yatayda ortalama */
+    align-items: center; /* Dikeyde ortalama */
+}
+
+/* Mobil menü stili */
+.mobile-menu {
+    display: none;
+    flex-direction: column;
+    background: linear-gradient(to right, #121218, #5b5c60); /* #091649, #68134f */
+    position: absolute;
+    top: 50px;
+    width: 100%;
+    left: 0;
+    z-index: 1000;
+}
+
+.mobile-menu a {
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+   /* border-top: 1px solid white;*/
+}
+
+
+/* Responsive  */
+@media (max-width: 768px) {
+    .topbar .center, .topbar .right {
+        display: none;
+    }
+    
+    .hamburger {
+        display: block;
+    }
+}
+
+/*SCROLL */
+
+.topbar{
+    opacity: 0;
+    transition: all 0.5s;
+    transform: translateY(-10px);
+
+}
+
+.topbar.active{
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.topbar .left i{
+    transition: all 0.3s;
+    transform: translateX(-20px);
+    opacity: 0;
+}
+
+.topbar.active.left i{
+    transition: all 0.3s;
+    transform: translateX(0px);
+    opacity: 1;
+}
+
+.topbar.active.left i:nth-child(2){
+    transition-duration: 0.5s;
+}
+
+.topbar.active.left i:nth-child(3){
+    transition-duration: 0.8s;
+}
+
+.topbar.active.left i:nth-child(4){
+    transition-duration: 1.2s;
+}
+
+.topbar.center, .topbar.right{
+    transform: translateX(-10px) translateY(-10px);
+    transition: all 0.5s;
+    opacity: 0;
+}
+
+.topbar.active.center, .topbar.active.right{
+    transform: translateX(0px) translateY(0px);
+    opacity: 1;
+}  
+
+
+
+.header {
+    margin-top: 70px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.header img{
+    width: 100%;
+    height: 450px;
+    object-fit: cover;    /*height resmin yapısı bozar bu ise tam sığdırır */
+
+}
+/* Responsive  */
+@media (max-width: 768px) {
+    .header{
+        margin-top: 0px;
+    }
+}
+
+.header h1, header h3{
+    position: absolute;
+}
+
+.header h1{
+    top: -30px;
+    font-family: 'Pacifico', cursive;
+    color: white;
+    text-shadow: 10px 10px 10px #000, 10px 10px 10px #000;
+}
+@media (max-width: 768px) {
+    .header h1{
+        top: 40px;
+        font-size: 2.8rem;
+    }
+}
+
+.header h3{
+    top: 50px;
+    font-family: 'Satisfy', cursive;
+    font-size: 3rem;
+    text-shadow: 5px 5px 5px rgba(0,0,0,0.5),0px 0px 5px rgba(0,0,0,0.4),0px 0px 10px rgba(0, 0, 0, 0.6);
+    color: white;
+}
+@media (max-width: 768px) {
+    .header h3{
+        top: 120px;
+    }
+}
+
+
+
+/* scroll animasyon */
+.header{
+    transform: translateX(-30px);
+    transition: all 0.5s;
+    opacity: 0;
+}
+.header.active{
+    transform: translateX(0px);
+    opacity: 1;
+}
+
+.header h1, .header h3{
+    position: absolute;
+    transform: translateY(-20px);
+    transition: all 0.8s;
+    opacity: 0;
+}
+
+
+.header.active h1, .header.active h3{
+    position: absolute;
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+.header.active h3{
+    transition-delay: 0.3s;
+    position: absolute;
+    transform: translateY(0px);
+} 
+
+
+.footer{
+    background: linear-gradient(to right, #121218, #5b5c60);
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 80px;
+    padding:15px;
+    justify-content:center ;
+    text-align: center;
+    
+ }
+
+
+ .footer span{
+    color: white;
+    
+ }
+
+ /*scrol */ 
+ 
+.footer{
+    opacity: 0;
+    transition: all 0.5s;
+    transform: translateY(0px);
+
+}
+
+.footer.active{
+    opacity: 1;
+    transform: translateY(-10px);
+}

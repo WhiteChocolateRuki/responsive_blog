@@ -139,6 +139,9 @@ i:hover{
     width: 100%;
     left: 0;
     z-index: 1000;
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: weight;
 }
 
 .mobile-menu a {

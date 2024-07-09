@@ -5,7 +5,7 @@
 }
 
 html::-webkit-scrollbar{
-    width: 0px  /*yandaki yukarı aşağı kaydrıma çubuğunu kaldırır*/
+    width: 0px 
 }
 
 html{
@@ -37,19 +37,18 @@ ul{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    background: linear-gradient(to right, #102e4c, #098eb5); /* #450f35 */
+    background: linear-gradient(to right, #102e4c, #098eb5); 
     font-family: "Dancing Script", cursive;
     font-optical-sizing: auto;
     font-weight: weight;
     font-style: bolt;
     color: white;
-    /* justify-content: space-evenly; */
+    
 }
 
 .topbar h4{
     font-size: normal;
     font-family: "Merriweather", serif;
-    /* font-family: "Volkhov", serif; */
     font-weight: 900;
     font-style: italic;
     margin-left: 1px;    
@@ -59,7 +58,6 @@ ul{
 
 .topbar{
     width: 100%;
-    /* max-width: 1366px; */
     display: flex;
 }
 .topbar .right{
@@ -67,9 +65,7 @@ ul{
     height: 100%;
     display: flex;
     align-items: center;
-    /* justify-content: space-evenly; */
     justify-content: center;
-    /* padding-right:5px; */
 }
 .topbar .left{
     flex: 3; 
@@ -97,19 +93,15 @@ i:hover{
 
 }
 .topbar .center a {
-    color: white; /* Yazı rengini beyaz yap */
-    text-decoration: none; /* Altı çiziliyi kaldır */
+    color: white; 
+    text-decoration: none; 
 }
 .center a:hover{
     opacity: 0.7;
     
     }
-/* .left img {
-        margin-right: 10px;  Resim ile yazı arasına 10px boşluk ekle 
-}*/
+
 .topbar .left span img{
-    /* width: 30px;
-    height: 30px; */
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -125,19 +117,19 @@ i:hover{
 .hamburger {
     display: none;
     cursor: pointer;
-    padding: 10px; /* İkonun etrafına boşluk */
-    margin-left: auto; /* Sağ tarafa yaslamak için */
-    margin-right: auto; /* Sağ tarafa yaslamak için */
+    padding: 10px; 
+    margin-left: auto;
+    margin-right: auto; 
 }
 
 .hamburger i {
     font-size: 1.5rem;
     display: flex;
-    justify-content: center; /* Yatayda ortalama */
-    align-items: center; /* Dikeyde ortalama */
+    justify-content: center; 
+    align-items: center; 
 }
 
-/* Mobil menü stili */
+/* Mobil menü */
 .mobile-menu {
     display: none;
     flex-direction: column;
@@ -153,7 +145,6 @@ i:hover{
     color: white;
     padding: 10px;
     text-decoration: none;
-   /* border-top: 1px solid white;*/
 }
 
 
@@ -167,7 +158,7 @@ i:hover{
     border-top: none;
 }
 
-/* Responsive düzenlemeler */
+/* Responsive */
 @media (max-width: 768px) {
     .topbar .center, .topbar .right {
         display: none;
@@ -240,10 +231,10 @@ i:hover{
 .header img{
     width: 100%;
     height: 450px;
-    object-fit: cover;    /*height resmin yapısı bozar bu ise tam sığdırır */
+    object-fit: cover;    
 
 }
-/* Responsive düzenlemeler */
+/* Responsive*/
 @media (max-width: 768px) {
     .header{
         margin-top: 0px;
@@ -388,7 +379,7 @@ i:hover{
     .about .picture img {
         height: auto;
         width: 100%;
-        max-height: 300px; /* Mobilde resimlerin yüksekliğini ayarlamak için */
+        max-height: 300px; 
     }
 
     .about .text {
